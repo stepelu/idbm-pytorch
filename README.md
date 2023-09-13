@@ -79,16 +79,18 @@ FLAGS:
 The findings of the paper are replicated by the following runs:
 
 ```bash
-# Iterated Diffusion Bridge Mixture Transport:
+# IDBM -- Iterated Diffusion Bridge Mixture Transport:
 python idbm.py --method=IDBM --sigma=1.0
 python idbm.py --method=IDBM --sigma=0.5
 python idbm.py --method=IDBM --sigma=0.2
 
-# Backward Diffusion Bridge Mixture Transport:
+# BDBM -- Backward Diffusion Bridge Mixture Transport:
 python idbm.py --method=IDBM --sigma=1.0 --iterations=1 --training_steps=300000
 
-# Diffusion Iterated Proportional Fitting Transport:
+# DIPF -- Diffusion Iterated Proportional Fitting Transport:
 python idbm.py --method=DIPF --sigma=1.0
 python idbm.py --method=DIPF --sigma=0.5
 python idbm.py --method=DIPF --sigma=0.2
 ```
+
+The runs' histories have been persisted on [Weights & Biases](https://wandb.ai/stepelu/pub-idbm-pytorch), to aid reproducibility, analysis and experimentation.
